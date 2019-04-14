@@ -6,7 +6,12 @@ function solve(o, p, s) {
     const d = des(o, p, s);
     console.log(d);
     if (d < 0) {
-        console.log(`Дискриминант равен ${d}. Дискриминант меньше нуля, значит корней нету.`);
+        //console.log(`Дискриминант равен ${d}. Дискриминант меньше нуля, значит корней нету.`);
+        return {
+            print: function () { 
+                console.log("No roots")
+            }
+        }
     }
 
     if (d === 0) {

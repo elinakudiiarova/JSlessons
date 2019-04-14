@@ -16,6 +16,7 @@ while (e <= 100) {
 let s = ``;
 let b = 1;
 while (b <= 10) {
+
     if (b < 10) {
         s = s + b + ", ";
     } else {
