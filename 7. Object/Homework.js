@@ -6,9 +6,8 @@ function time(f) {
     };
     return h;
 }
-let f = 0;
-while (f <= 60) {
+
+for (let f = 0; f <= 60; f = f + 1){
     let m = time(f);
     console.log(`t = ${f} min, V = ${m.speed} m/sec, S = ${m.distantion} m`)
-    f = f + 1;
 }
