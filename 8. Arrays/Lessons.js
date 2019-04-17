@@ -13,11 +13,12 @@ const g = [{
 
 for (let k = 0; k < g.length; k++)
     console.log(`${g[k].name}, ${g[k].age}`);
-    
+
 
 let y = 0;
 
 for (let i = 0; i < g.length; i++) {
-y = y + g[i].age;}
- 
+    y = y + g[i].age;
+}
+
 console.log(y);
