@@ -29,5 +29,17 @@ const c = [{
 }, {
     name: `Leonid`,
     marks: [10, 6, 8, 4, 10, 5, 7, 6 , 9, 9]
-}];
-console.log(c);
+    }];
+
+for (let k = 0; k < c.length; k++) {
+    
+    console.log(`Child's name : ${c[k].name} , marks: ${c[k].marks}.`);
+}
+ 
+
+for (let h = 0; h < c.length; h++) {
+
+    console.log(`Child's name : ${c[k].name} , marks: ${c[k].marks}.`);
+}
+
+
