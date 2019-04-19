@@ -3,17 +3,17 @@ const c = [{
     marks: [10, 9, 10, 11, 12, 10, 9, 8, 10]
 }, {
     name: `Nicole`,
-    marks: [9, 11, 8, 8, 10, 11, 10, 7, 11]
+    marks: [9, 11, 8, 10, 10, 11, 10, 7, 11]
 }, {
     name: `Katya`,
-    marks: [7, 9, 10 , 8, 5, 8, 9, 10]
+    marks: [7, 9, 10, 8, 5, 8, 9, 10]
 }, {
     name: 'Alina',
     marks: [4, 8, 5, 11, 7, 8, 5, 11]
-    
+
 }, {
     name: `Ilya`,
-    marks: [10, 9, 6, 7, 10 , 8, 9, 5]
+    marks: [10, 9, 6, 7, 10, 8, 9, 5]
 }, {
     name: `Vlad`,
     marks: [5, 8, 9, 11, 7, 9, 9, 8, 10]
@@ -28,18 +28,21 @@ const c = [{
     marks: [5, 7, 10, 11, 6, 7, 8, 9, 6]
 }, {
     name: `Leonid`,
-    marks: [10, 6, 8, 4, 10, 5, 7, 6 , 9, 9]
-    }];
+    marks: [10, 6, 8, 4, 10, 5, 7, 6, 9, 9]
+}];
 
 for (let k = 0; k < c.length; k++) {
-    
-    console.log(`Child's name : ${c[k].name} , marks: ${c[k].marks}.`);
+    console.log(` ${c[k].name}: ${c[k].marks}, ${avg(c[k].marks)}.`);
 }
- 
 
-for (let h = 0; h < c.length; h++) {
-
-    console.log(`Child's name : ${c[k].name} , marks: ${c[k].marks}.`);
+function avg(m) {
+    let sum = 0;
+    for (let i = 0; i < m.length; i++) {
+        sum = sum + m[i];
+    }
+    return sum / m.length;
 }
+
+
 
 
