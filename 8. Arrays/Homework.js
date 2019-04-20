@@ -123,10 +123,12 @@ const c = [{
 
 for (let k = 0; k < c.length; k++) {
     console.log(c[k].name);
+    let all = 0;
     for (let h = 0; h < c[k].courses.length; h++) {
+        all = all + avg(c[k].courses[h].marks);
         console.log(`${c[k].courses[h].title} : ${avg(c[k].courses[h].marks)}`)
     }
-
+    console.log(all / c[k].courses.length);
 }
 
 function avg(m) {
