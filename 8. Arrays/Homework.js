@@ -1,38 +1,132 @@
 const c = [{
     name: `Elya`,
-    marks: [10, 9, 10, 11, 12, 10, 9, 8, 10]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: `Nicole`,
-    marks: [9, 11, 8, 10, 10, 11, 10, 7, 11]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: `Katya`,
-    marks: [7, 9, 10, 8, 5, 8, 9, 10]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: 'Alina',
-    marks: [4, 8, 5, 11, 7, 8, 5, 11]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 
 }, {
     name: `Ilya`,
-    marks: [10, 9, 6, 7, 10, 8, 9, 5]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: `Vlad`,
-    marks: [5, 8, 9, 11, 7, 9, 9, 8, 10]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: `Arina`,
-    marks: [10, 10, 11, 11, 8, 7, 9, 10]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: `Lisa`,
-    marks: [10, 11, 7, 9, 9, 10, 10, 9]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: `Masha`,
-    marks: [5, 7, 10, 11, 6, 7, 8, 9, 6]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }, {
     name: `Leonid`,
-    marks: [10, 6, 8, 4, 10, 5, 7, 6, 9, 9]
+    courses: [{
+        title: `Russian`,
+        marks: [10, 9, 9, 8, 11, 10]
+    }, {
+        title: `Ukrainian`,
+        marks: [9, 9, 10, 8, 10, 9]
+    }, {
+        title: `Math`,
+        marks: [10, 12, 10, 11, 10, 10]
+    }]
 }];
 
 for (let k = 0; k < c.length; k++) {
-    console.log(` ${c[k].name}: ${c[k].marks}, ${avg(c[k].marks)}.`);
+    console.log(c[k].name);
+    for (let h = 0; h < c[k].courses.length; h++) {
+        console.log(`${c[k].courses[h].title} : ${avg(c[k].courses[h].marks)}`)
+    }
+
 }
 
 function avg(m) {
@@ -42,6 +136,8 @@ function avg(m) {
     }
     return sum / m.length;
 }
+
+
 
 
 
