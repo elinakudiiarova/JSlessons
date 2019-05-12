@@ -12,15 +12,14 @@ console.log(max)
 
 // find index of max number in array
 
-let max = arr[0]; let maxi = 0;
+let maxi = 0;
 for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-        max = arr[i];
+    if (arr[i] > arr[maxi]) {
         maxi = i;
     };
 
 };
 
-console.log(max)
+console.log(arr[maxi])
 console.log(maxi)
 
