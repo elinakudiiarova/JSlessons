@@ -34,3 +34,20 @@ console.log(students.filter(f => f.gender === `F`).filter(over10));
 
 console.log(`every second student`);
 console.log(students.filter((m, i) => i % 2 === 0));
+
+// map
+
+console.log(`age of students`);
+console.log(students.map(a => a.age));
+
+console.log(`string with all info about student`);
+console.log(students.map(a => `Name: ${a.name}, age: ${a.age}, gender: ${a.gender}.`));
+
+console.log(`if boy - years before army; else - age`);
+console.log(students.map(m => {
+    if (m.gender === `M`) {
+        return 18 - m.age;
+    } else {
+        return m.age;
+    }
+}));
