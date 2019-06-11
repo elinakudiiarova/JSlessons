@@ -138,9 +138,3 @@ function avg(m) {
     }
     return sum / m.length;
 }
-
-
-
-
-
-
