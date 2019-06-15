@@ -33,4 +33,4 @@ module.exports = user =>
         follow_count: result.data.user.edge_follow.count
       };
     })
-  ]).then(([a, b]) => ({ ...a, ...b }));
+  ]).then(([a, b]) => ({ user, ...a, ...b }));
