@@ -1,1 +1,1 @@
-module.exports = window.__additionalData.feed.data.user.id;
+module.exports = window._sharedData.config.viewerId;
