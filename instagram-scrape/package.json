@@ -1,0 +1,18 @@
+{
+  "name": "instagram-scrape",
+  "version": "1.0.0",
+  "description": "- Install dependencies `npm i` - Build `npm run build` - Open snippet file _dist/snippet.js_ - Copy its content - Open https://instagram.com - Open browser console, paste snippet code and run",
+  "main": "snippet.js",
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.34.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.4"
+  }
+}
