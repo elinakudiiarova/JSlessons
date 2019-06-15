@@ -1,6 +1,6 @@
 const { QUERY_HASH_GET_FOLLOWERS } = require("./query-hashes");
 
-const makeInstagramRequest = require("./make-instagram-request");
+const makeInstagramRequest = require("../make-instagram-request");
 
 module.exports = currentUser =>
   getFollowersCore(currentUser).then(r => r.map(i => i.node));
