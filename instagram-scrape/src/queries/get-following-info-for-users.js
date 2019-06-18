@@ -1,6 +1,6 @@
 const getFollowingInfoByUser = require("./get-following-info-by-user");
 
-const CONCURRENT_REQUESTS = 10;
+const CONCURRENT_REQUESTS = 4;
 
 module.exports = function(userIds) {
   const userCopy = [...userIds];
