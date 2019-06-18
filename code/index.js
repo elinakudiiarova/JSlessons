@@ -1,5 +1,15 @@
-const oldfollowers = require("../Followers/followers-2019-06-04.json");
 const newFollowers = require("./new-followers");
-const followers = require("../Followers/followers-2019-06-11.json");
+const offFollowers = require("./off-followers");
+const followersByDate = require("./followers-by-date");
 
-console.log(newFollowers(oldfollowers, followers));
+followersByDate.forEach((m, i, a) => {
+    if (i === 0) {
+        console.log(`${m.date} : ${m.followers.length}`);
+    } else {
+        console.log(`${m.date} : ${newFollowers(a[i - 1].followers, m.followers).length}, 
+    ${offFollowers(a[i - 1].followers, m.followers).length} `);
+    }
+});
+//console.log(newFollowers(oldfollowers, followers));
+//console.log(newFollowers(followers, followers2));
+
