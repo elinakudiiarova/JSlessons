@@ -5,9 +5,5 @@ const getFollowersCountByUser = require("./queries/get-following-info-by-user");
 const currentUser = require("./current-user");
 
 getFollowers(currentUser).then(r => {
-  console.log(r);
-
-  // getFollowingInfoForUsers(r.map(i => i.id)).then(f => console.log(f));
+  console.log(JSON.stringify(r));
 });
-
-getFollowersCountByUser("2580437878").then(r => console.log(r));
